@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 06</title>
+    <script>
+        var array=[];
+        do{
+            var media = 0;
+
+            var n1 = parseFloat(prompt("Informe a primeira nota: "));
+            var n2 = parseFloat(prompt("Informe a segunda nota: "));
+
+
+            media = (n1 + n2)/2;
+            if(media > 5){
+                array.push(media);
+            }
+            alert("Média do aluno é: "+media);
+
+            var rep = prompt('Calcular média de um aluno? "S" para sim, "N" Para não');
+        }while(rep == 's');
+        document.write("Alunos aprovados: "+ array.length + " ");
+        /* Não consegui separar os itens da array quebrando linha nem com espaço entre eles*/
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 14</title>
+    <script>
+        var dentro = [];
+        var fora = [];
+        for(i = 0; i <= 10; i++){
+            var num = parseInt(prompt("Informe 10 números: "));
+
+            if(num <= 42 && num >= 24){
+                dentro.push(num);
+            }else{
+                fora.push(num);
+            }
+        }
+        document.write("Números dentro do limite: " +dentro + "<br><br>");
+        document.write("Números fora do limite: " +fora);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
